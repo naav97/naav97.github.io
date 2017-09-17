@@ -1,0 +1,45 @@
+html {
+	background-color: #252525;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+#dia {
+	font-size: 100px;
+    color: #3C3CC1;
+}
+#horaFecha {
+	font-size: 60px;
+	color: #c13c3c;
+}
+#searchbox_demo {
+	margin: 1px;
+	border: 1px;
+}
+a {
+	text-decoration: none;
+	color: #c13c3c;
+	font-size: 30px;
+}
+a:hover {
+	color: #7F6673;
+}
+p {
+	font-size: 50px;
+	color: #c13c3c;
+}
+.search{
+	width: 25%;
+	background: none;
+	padding: 1em;
+	margin: 0.8em;
+	border: none;
+	border-bottom: 1px solid #c13c3c;
+	color: #c13c3c;
+	letter-spacing: 1px;
+}
+.links {
+	column-count: 2;
+	column-rule-width: 1px;
+	width: 500px;
+	margin: auto;
+}
