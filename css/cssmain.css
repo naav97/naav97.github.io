@@ -1,15 +1,15 @@
 html {
-	background-color: #252525;
+	background-color: #252525; /*Nero*/
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 #dia {
 	font-size: 100px;
-    color: #3C3CC1;
+    color: #4156C5; /*Free Speech Blue*/
 }
 #horaFecha {
 	font-size: 60px;
-	color: #c13c3c;
+	color: #cc3333; /*Persian Red*/
 }
 #searchbox_demo {
 	margin: 1px;
@@ -17,15 +17,15 @@ html {
 }
 a {
 	text-decoration: none;
-	color: #c13c3c;
+	color: #cc3333; /*Persian Red*/
 	font-size: 30px;
 }
 a:hover {
-	color: #7F6673;
+	color: #794D60; /*Cosmic*/
 }
 p {
 	font-size: 50px;
-	color: #c13c3c;
+	color: #cc3333; /*Persian Red*/
 }
 .search{
 	width: 25%;
@@ -33,8 +33,8 @@ p {
 	padding: 1em;
 	margin: 0.8em;
 	border: none;
-	border-bottom: 1px solid #c13c3c;
-	color: #c13c3c;
+	border-bottom: 1px solid #cc3333; /*Persian Red*/
+	color: #cc3333; /*Persian Red*/
 	letter-spacing: 1px;
 }
 .links {
