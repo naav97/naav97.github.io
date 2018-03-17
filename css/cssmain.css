@@ -1,5 +1,7 @@
 html {
 	background-image: url("../images/forest-wallpaper.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
 	background-color: #252525; /*Nero*/
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
