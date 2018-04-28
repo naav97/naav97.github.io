@@ -21,14 +21,10 @@ html {
 a {
 	text-decoration: none;
 	color: #cc3333; /*Persian Red*/
-	font-size: 30px;
+	font-size: 25px;
 }
 a:hover {
 	color: #794D60; /*Cosmic*/
-}
-p {
-	font-size: 50px;
-	color: #cc3333; /*Persian Red*/
 }
 .search{
 	width: 70%;
@@ -43,8 +39,9 @@ p {
 .links {
 	column-count: 2;
 	column-rule-width: 1px;
-	width: 500px;
+	width: 450px;
 	margin: auto;
+	margin-top: 20px;
 }
 .todo {
 	background-color: #252525; /*Nero*/
@@ -55,4 +52,7 @@ p {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); /* Yep! */
+}
+.margin1 {
+	margin: 50px;
 }
