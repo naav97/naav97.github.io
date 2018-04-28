@@ -1,2 +1,2 @@
 # newTab
-simple new tab
+simple new tab :)
