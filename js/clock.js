@@ -7,7 +7,7 @@ function startTime()
    var d_names = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
    var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
    document.getElementById('dia').innerHTML=d_names[curr_day];
-   document.getElementById('horaFecha').innerHTML = d+" of "+mo_names[mo-1];
+   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d;
 }
 function checkTime(i)
 {
