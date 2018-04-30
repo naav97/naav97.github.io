@@ -7,12 +7,13 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 #dia {
-	font-size: 100px;
-    color: #4156C5; /*Free Speech Blue*/
+	font-size: 110px;
+        color: #4156C5; /*Free Speech Blue*/
 }
 #horaFecha {
-	font-size: 60px;
+	font-size: 55px;
 	color: #cc3333; /*Persian Red*/
+	margin-bottom: 30px;
 }
 #searchbox_demo {
 	margin: 1px;
