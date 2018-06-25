@@ -8,15 +8,7 @@ function startTime()
    var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
    document.getElementById('dia').innerHTML=d_names[curr_day];
    document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d;
-   setTimeout(startTime(), 86400000);
-}
-function checkTime(i)
-{
-   if (i<10)
-   {
-      i="0" + i;
-   }
-   return i;
+   setTimeout(startTime, 1000);
 }
 function main( )
 {
