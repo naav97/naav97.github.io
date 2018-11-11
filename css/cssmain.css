@@ -18,7 +18,7 @@ html {
 	margin: 1px;
 	border: 1px;
 }
-a {
+ a {
 	text-decoration: none;
 	color: #cc3333; /*Persian Red*/
 	font-size: 25px;
@@ -36,7 +36,7 @@ a:hover {
 	color: #cc3333; /*Persian Red*/
 	letter-spacing: 1px;
 }
-.links {
+.container-fluid {
 	column-count: 2;
 	column-rule-width: 1px;
 	width: 450px;
