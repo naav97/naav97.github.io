@@ -7,7 +7,7 @@ html {
 }
 #dia {
 	font-size: 110px;
-        color: #3C3CC1; /*Free Speech Blue*/
+  color: #3C3CC1; /*Free Speech Blue*/
 }
 #horaFecha {
 	font-size: 55px;
@@ -18,14 +18,21 @@ html {
 	margin: 1px;
 	border: 1px;
 }
+
+.col {
+	padding: 8px 16px;
+}
+
+.col:hover {
+	background-color: #161616;
+}
+
  a {
 	text-decoration: none;
 	color: #cc3333; /*Persian Red*/
 	font-size: 25px;
 }
-a:hover {
-	color: #794D60; /*Cosmic*/
-}
+
 .search{
 	width: 70%;
 	background: none;
@@ -48,10 +55,10 @@ a:hover {
 	display: inline-block;
 	border-style: solid;
 	border-width: 8px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); /* Yep! */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
 }
 .margin1 {
 	margin: 50px;
