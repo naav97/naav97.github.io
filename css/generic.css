@@ -2,7 +2,7 @@ html {
 	background-repeat:no-repeat;
 	background-position:50% 0%;
 	background-color: #252525; /*Nero*/
-	text-align: center;
+	/*text-align: center;*/
 	font-family: 'Roboto', sans-serif;
 }
 body {
@@ -19,7 +19,7 @@ ul {
 	width: 100%;
 }
 li {
-	text-align: center;
+	text-align: left;
 	float: left;
 }
 li a {
