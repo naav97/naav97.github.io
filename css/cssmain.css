@@ -1,6 +1,8 @@
 html {
-	background-repeat:no-repeat;
-	background-position:50% 0%;
+    background: no-repeat center center fixed;
+    background-size: cover;
+	/*background-repeat:no-repeat;*/
+	/*background-position:50% 0%;*/
 	background-color: #252525; /*Nero*/
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
@@ -47,7 +49,7 @@ ul li #navItem{
     display: block;
 }
 
-@media screen and (device-aspect-ratio: 3/4), (device-aspect-ratio: 4/3){
+@media screen and (min-width: 591px) and (max-width: 1440px) {
     ul {
         width: 100%;
         height: auto;
@@ -91,18 +93,22 @@ ul li #navItem{
     margin-right: 10%;
 }
 
-@media screen and (device-aspect-ratio: 9/16), (device-aspect-ratio: 2/3){
+@media screen and (max-width: 590px){
     ul li #navItem {
         text-align: center;
         float: none
     }
 
     ul{
+        position: static;
+        width: 100%;
+        height: auto;
         flex-direction: column;
     }
 
     .todo {
-        top: 75%;
+        margin-top: 70%;
+        width: 50%;
     }
 
     #dia {
