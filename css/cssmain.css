@@ -49,6 +49,15 @@ ul li #navItem{
     display: block;
 }
 
+#wether {
+    float: right;
+    margin-top: 1%;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
 @media screen and (min-width: 591px) and (max-width: 1440px) {
     ul {
         width: 100%;
