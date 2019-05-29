@@ -47,7 +47,7 @@ ul li #navItem{
     display: block;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (device-aspect-ratio: 3/4), (device-aspect-ratio: 4/3){
     ul {
         width: 100%;
         height: auto;
@@ -91,7 +91,7 @@ ul li #navItem{
     margin-right: 10%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (device-aspect-ratio: 9/16), (device-aspect-ratio: 2/3){
     ul li #navItem {
         text-align: center;
         float: none
