@@ -23,7 +23,7 @@ function main( )
 
 function getWeather(){
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://dataservice.accuweather.com/currentconditions/v1/107487?apikey=7CFdFSVuYt8e8Ry2daeRIjBifNHiGGBw");
+    xhr.open("GET", "https://dataservice.accuweather.com/currentconditions/v1/107487?apikey=7CFdFSVuYt8e8Ry2daeRIjBifNHiGGBw");
     xhr.responseType = 'json';
 
     xhr.onload = function() {
