@@ -1,6 +1,5 @@
-html {
-    background: no-repeat center center fixed;
-    background-size: cover;
+html{
+  background-size: cover;
 	/*background-repeat:no-repeat;*/
 	/*background-position:50% 0%;*/
 	background-color: #252525; /*Nero*/
@@ -12,7 +11,7 @@ body {
 }
 
 .todo {
-	  background-color: #252525; /*Nero*/
+	  background-color: rgba(0, 0, 0, 0.7);/*#252525; Nero*/
 	  /*display: inline-block;*/
 	  border-style: solid;
 	  border-width: 8px;
@@ -30,7 +29,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	background: #252525;
+	background: rgba(0, 0, 0, 0.7);
 	width: 10%;
   height: 100%;
   display: flex;
@@ -64,6 +63,7 @@ ul li #navItem{
         height: auto;
         position: relative;
         flex-direction: row;
+        background: #252525;
     }
 
     ul li #navItem{
@@ -78,17 +78,20 @@ ul li #navItem{
 
 #dia {
 	  font-size: 110px;
+    font-weight: 100;
     color: #3C3CC1; /*Free Speech Blue*/
 }
 
 #horaFecha {
 	  font-size: 55px;
-	  color: #cc3333; /*Persian Red*/
+    font-weight: 300;
+	  color: #a01414; /*Persian Red*/
 	  margin-bottom: 30px;
 }
 
 #link {
 	  font-size: 25px;
+    font-weight: 400;
     width: 45%;
     margin-top: 2%;
     margin-right: 5%;
@@ -113,6 +116,7 @@ ul li #navItem{
         width: 100%;
         height: auto;
         flex-direction: column;
+        background: #252525;
     }
 
     .todo {
@@ -144,7 +148,7 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: #cc3333;
+    color: #a01414;
     text-align: center;
 }
 
