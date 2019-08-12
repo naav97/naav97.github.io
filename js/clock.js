@@ -12,9 +12,9 @@ function startTime()
 }
 function main( )
 {
-  $(".todo").hide( );
-  startTime();
-  var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg'];
+    $(".todo").hide( );
+    startTime();
+    var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg'];
     $('html').css({'background-image': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});
     $(".todo").fadeIn(500);
     getWeather();
@@ -32,4 +32,36 @@ function getWeather(){
     }
 
     xhr.send();
+}
+
+function lenguas(){
+    document.getElementById("lenguas").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function torrents(){
+    document.getElementById("torrents").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function software(){
+    document.getElementById("software").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function chans(){
+    document.getElementById("chans").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function laU(){
+    document.getElementById("laU").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function movies(){
+    document.getElementById("movies").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function fileT(){
+    document.getElementById("fileT").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function top1(){
+    document.getElementById("top1").scrollIntoView({behavior: "smooth", block: "center"});
 }

@@ -3,6 +3,7 @@ html{
 	/*background-repeat:no-repeat;*/
 	/*background-position:50% 0%;*/
 	background-color: #252525; /*Nero*/
+  background-attachment: fixed;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
@@ -15,11 +16,14 @@ body {
 	  /*display: inline-block;*/
 	  border-style: solid;
 	  border-width: 8px;
-    position: absolute;
-    left: 50%;
-    top: 57%;
-    transform: translate(-50%, -50%); /* Yep! */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 57%; */
+    /* transform: translate(-50%, -50%); */
     width: 35%;
+    margin-left: 32%;
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 
 ul {
@@ -61,7 +65,7 @@ ul li #navItem{
     ul {
         width: 100%;
         height: auto;
-        position: relative;
+        /*position: relative;*/
         flex-direction: row;
         background: #252525;
     }
