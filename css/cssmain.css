@@ -42,7 +42,7 @@ li {
 }
 li #navItem {
 	padding: 8px 16px;
-	font-size: 18px;
+	/*font-size: 18px;*/
 }
 
 ul li #navItem{
@@ -87,62 +87,6 @@ ul li #navItem{
     margin-right: 10%;
 }
 
-@media screen and (min-width: 591px) and (max-width: 1440px) {
-    ul {
-        width: 100%;
-        height: auto;
-        /*position: relative;*/
-        flex-direction: row;
-        background: #252525;
-    }
-
-    ul li #navItem{
-        float: left;
-        padding: 15px;
-    }
-
-    .todo {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 590px){
-    ul li #navItem {
-        text-align: center;
-        float: none
-    }
-
-    ul{
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        background: #252525;
-    }
-
-    .todo {
-        margin-top: 70%;
-        width: 50%;
-    }
-
-    #dia {
-        font-size: 35px;
-    }
-
-    #horaFecha {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-
-    #link {
-        font-size: 20px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-}
-
 a:hover {
 	background-color: #161616;
 }
@@ -172,4 +116,74 @@ a {
 .margin1 {
 	  margin-top: 10%;
     margin-bottom: 10%;
+}
+
+@media screen and (min-width: 591px) and (max-width: 1440px) {
+    ul {
+        width: 100%;
+        height: auto;
+        /*position: relative;*/
+        flex-direction: row;
+        background: #252525;
+    }
+
+    ul li #navItem{
+        float: left;
+        padding: 15px;
+    }
+
+    .todo {
+      margin-top: 13%;
+    }
+
+  #navItem {
+    font-size: 13px;
+  }
+
+  #dia {
+    font-size: 70px;
+  }
+
+  #horaFecha {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 590px){
+    ul li #navItem {
+        text-align: center;
+        float: none
+    }
+
+    ul{
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background: #252525;
+    }
+
+    .todo {
+        margin-top: 70%;
+        width: 50%;
+    }
+
+    #dia {
+        font-size: 45px;
+    }
+
+    #horaFecha {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    #link {
+      margin-top: 4%;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
 }
