@@ -87,6 +87,19 @@ ul li #navItem{
     margin-right: 10%;
 }
 
+p {
+    text-align: left;
+    color: #b2b2b2;
+}
+
+.containerCorona {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 a:hover {
 	background-color: #161616;
 }

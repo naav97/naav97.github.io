@@ -34,6 +34,44 @@ function getWeather(){
     xhr.send();
 }
 
+function getCorona(){
+    var t = new Date();
+    var ano = t.getFullYear();
+    var mes = t.getMonth() + 1;
+    var dia = t.getDate() - 1;
+    if ((mes+"").length < 2) {
+        mes = '0' + mes;
+    }
+    if ((dia+"").length < 2) {
+        dia = '0' + dia;
+    }
+    var fe = ano + "-" + mes + "-" + dia;
+    var pais = document.getElementById("cont").value;
+    var dato = new XMLHttpRequest();
+    dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&q="+pais);
+    dato.responseType = 'json';
+    dato.onload = function() {
+        let poblacion = document.getElementById("pop").value;
+        let confirmados = dato.response.data["0"].confirmed;
+        let activos = dato.response.data["0"].active;
+        let recuperados = dato.response.data["0"].recovered;
+        let muertos = dato.response.data["0"].deaths;
+        let porconf = (confirmados * 100)/poblacion;
+        let poract = (activos *  100)/confirmados;
+        let porrec = (recuperados * 100)/(confirmados - activos);
+        let pormu = (muertos * 100)/(confirmados - activos);
+        let porconfr = Math.round(porconf * 100000) / 100000;
+        let poractr = Math.round(poract * 100000) / 100000;
+        let porrecr = Math.round(porrec * 100000) / 100000;
+        let pormur = Math.round(pormu * 100000) / 100000;
+        document.getElementById('confirmados').innerHTML = 'Confirmados: ' + confirmados + " (" + porconfr + '% de la poblacion mundial)';
+        document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados)';
+        document.getElementById('recuperados').innerHTML = 'Recuperados: ' + recuperados + " (" + porrecr + '%)';
+        document.getElementById('muertos').innerHTML = 'Muertes: ' + muertos + " (" + pormur + '%)';
+    }
+    dato.send();
+}
+
 function lenguas(){
     document.getElementById("lenguas").scrollIntoView({behavior: "smooth", block: "center"});
 }
@@ -64,4 +102,8 @@ function fileT(){
 
 function top1(){
     document.getElementById("top1").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function corona(){
+  document.getElementById("corona").scrollIntoView({behavior: "smooth", block: "center"});
 }

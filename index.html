@@ -22,6 +22,7 @@
           <li><a id="navItem" onclick="laU()">Uni</a></li>
           <li><a id="navItem" onclick="movies()">Movies</a></li>
           <li><a id="navItem" onclick="fileT()">File Transfer</a></li>
+          <li><a id="navItem" onclick="corona()">Corona</a></Li>
           <li style="float:right" id="wether"></li>
         </ul>
       </div>
@@ -131,6 +132,25 @@
                   <a id="link" href="https://file.pizza/">File Pizza(BitTorrent)</a><br>
                   <br>
                   <a id="link" href="https://toffeeshare.com/">ToffeeShare(RTP)</a><br>
+              </div>
+          </div>
+      </div>
+      <div class="todo" id="corona">
+          <div class="margin1">
+              <div class="containerCorona" id="links">
+                  <form action="getCorona()">
+                      <input class="search" type="text" name="cont" id="cont" placeholder="Pais"><br>
+                      <input class="search" type="number" name="pop" id="pop" placeholder="Poblacion"><br>
+                      <a id="link" onclick="getCorona()">GO!</a>
+                  </form>
+                  <br>
+                  <p id="confirmados"></p><br>
+                  <br>
+                  <p id="activos"></p><br>
+                  <br>
+                  <p id="recuperados"></p><br>
+                  <br>
+                  <p id="muertos"></p><br>
               </div>
           </div>
       </div>
