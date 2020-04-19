@@ -52,10 +52,18 @@ function getCorona(){
     dato.responseType = 'json';
     dato.onload = function() {
         let poblacion = document.getElementById("pop").value;
-        let confirmados = dato.response.data["0"].confirmed;
-        let activos = dato.response.data["0"].active;
-        let recuperados = dato.response.data["0"].recovered;
-        let muertos = dato.response.data["0"].deaths;
+        let confirmados = 0;
+        let activos = 0;
+        let recuperados = 0;
+        let muertos = 0;
+        var arreglo = dato.response.data;
+        var provincia;
+        for (provincia in arreglo) {
+            confirmados += arreglo[provincia].confirmed;
+            activos += arreglo[provincia].active;
+            recuperados += arreglo[provincia].recovered;
+            muertos  += arreglo[provincia].deaths;
+        }
         let porconf = (confirmados * 100)/poblacion;
         let poract = (activos *  100)/confirmados;
         let porrec = (recuperados * 100)/(confirmados - activos);
@@ -64,7 +72,7 @@ function getCorona(){
         let poractr = Math.round(poract * 100000) / 100000;
         let porrecr = Math.round(porrec * 100000) / 100000;
         let pormur = Math.round(pormu * 100000) / 100000;
-        document.getElementById('confirmados').innerHTML = 'Confirmados: ' + confirmados + " (" + porconfr + '% de la poblacion mundial)';
+        document.getElementById('confirmados').innerHTML = 'Confirmados: ' + confirmados + " (" + porconfr + '% de la poblacion)';
         document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados)';
         document.getElementById('recuperados').innerHTML = 'Recuperados: ' + recuperados + " (" + porrecr + '%)';
         document.getElementById('muertos').innerHTML = 'Muertes: ' + muertos + " (" + pormur + '%)';
