@@ -1,13 +1,16 @@
 function startTime()
 {
+    var oneday = 24*60*60*1000;
+    var dayzero = new Date(2020,2,20);
    var today = new Date();
    var d = today.getDate();
    var mo = today.getMonth() + 1;
    var curr_day  = today.getDay();
    var d_names = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
-   var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var diasencuarentena = Math.round(Math.abs((dayzero - today)/ oneday));
    document.getElementById('dia').innerHTML=d_names[curr_day];
-   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d;
+   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d+" | "+diasencuarentena+" dias en cuarentena";
    setTimeout(startTime, 10000000);
 }
 function main( )
@@ -68,12 +71,14 @@ function getCorona(){
         let poract = (activos *  100)/confirmados;
         let porrec = (recuperados * 100)/(confirmados - activos);
         let pormu = (muertos * 100)/(confirmados - activos);
+        let poractp = (activos * 100)/poblacion;
         let porconfr = Math.round(porconf * 100000) / 100000;
         let poractr = Math.round(poract * 100000) / 100000;
         let porrecr = Math.round(porrec * 100000) / 100000;
         let pormur = Math.round(pormu * 100000) / 100000;
+        let poractpr = Math.round(poractp * 100000) / 100000;
         document.getElementById('confirmados').innerHTML = 'Confirmados: ' + confirmados + " (" + porconfr + '% de la poblacion)';
-        document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados)';
+        document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados ' + poractpr + '% de la poblacion)';
         document.getElementById('recuperados').innerHTML = 'Recuperados: ' + recuperados + " (" + porrecr + '%)';
         document.getElementById('muertos').innerHTML = 'Muertes: ' + muertos + " (" + pormur + '%)';
     }
