@@ -31,7 +31,7 @@ function getWeather(){
 
     xhr.onload = function() {
         let temp = xhr.response["0"].Temperature.Metric.Value;
-        document.getElementById('wether').innerHTML = temp + ' C';
+        document.getElementById('wether').innerHTML = temp + 'C';
     }
 
     xhr.send();
@@ -51,7 +51,7 @@ function getCorona(){
     var fe = ano + "-" + mes + "-" + dia;
     var pais = document.getElementById("cont").value;
     var dato = new XMLHttpRequest();
-    dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&q="+pais);
+    dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&region_name="+pais);
     dato.responseType = 'json';
     dato.onload = function() {
         let poblacion = document.getElementById("pop").value;
