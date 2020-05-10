@@ -38,6 +38,7 @@ function getWeather(){
 }
 
 function getCorona(){
+    var poblas = JSON.parse(paises);
     var t = new Date();
     var ano = t.getFullYear();
     var mes = t.getMonth() + 1;
@@ -54,7 +55,15 @@ function getCorona(){
     dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&region_name="+pais);
     dato.responseType = 'json';
     dato.onload = function() {
-        let poblacion = document.getElementById("pop").value;
+        //let poblacion = document.getElementById("pop").value;
+        let poblacion = 0;
+        for (p in poblas) {
+            var soni = poblas[p].Name.toUpperCase() === pais.toUpperCase();
+            if (soni) {
+                poblacion = poblas[p].Population*1000000;
+                break;
+            }
+        }
         let confirmados = 0;
         let activos = 0;
         let recuperados = 0;
