@@ -1,8 +1,8 @@
 html{
+    --color-fondo: #333333;
   background-size: cover;
 	background-repeat:no-repeat;
 	background-position:50% 0%;
-	background-color: #252525; /*Nero*/
   background-attachment: fixed;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
@@ -12,10 +12,10 @@ body {
 }
 
 .todo {
-	  background-color: #333333;
+	  background-color: var(--color-fondo);
 	  border-style: solid;
 	  border-width: 8px;
-    border-color: #333333;
+    border-color: var(--color-fondo);
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -30,7 +30,7 @@ ul {
 	margin: 1%;
 	padding: 0;
 	overflow: auto;
-	background: #333333;
+	background: var(--color-fondo);
 	width: 98%;
   height: auto;
   display: flex;
@@ -40,22 +40,14 @@ ul {
 li {
 	text-align: center;
 }
-li #navItem {
-	padding: 8px 16px;
-	/*font-size: 18px;*/
-}
 
-ul li #navItem{
+ul li .navItem{
     display: block;
 }
 
 #wether {
     float: right;
-    padding: 8px 16px;
-    font-size: 18px;
-    display: block;
     color: #fff;
-    text-align: center;
 }
 
 #dia {
@@ -71,7 +63,7 @@ ul li #navItem{
 	  margin-bottom: 30px;
 }
 
-#link {
+.link {
 	  font-size: 25px;
     font-weight: 400;
     width: 45%;
@@ -94,7 +86,7 @@ p {
 
 .containerCorona {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     margin-left: 10%;
     margin-right: 10%;
@@ -110,7 +102,7 @@ a {
     text-align: center;
 }
 
-#navItem {
+.navItem {
 	font-size: 18px;
 	padding: 8px 16px;
 }
@@ -131,16 +123,44 @@ a {
     margin-bottom: 10%;
 }
 
+#cont {
+    width: 30%;
+}
+
+#loader {
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 40%;
+    border: 16px solid var(--color-fondo);
+    border-radius: 50%;
+    border-top: 16px solid #b2b2b2;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 @media screen and (min-width: 591px) and (max-width: 1440px) {
     ul {
         width: 100%;
         height: auto;
         /*position: relative;*/
         flex-direction: row;
-        background: #252525;
+        background: var(--color-fondo);
     }
 
-    ul li #navItem{
+    ul li .navItem{
         float: left;
         padding: 15px;
     }
@@ -149,7 +169,7 @@ a {
       margin-top: 13%;
     }
 
-  #navItem {
+  .navItem {
     font-size: 13px;
   }
 
@@ -163,7 +183,7 @@ a {
 }
 
 @media screen and (max-width: 590px){
-    ul li #navItem {
+    ul li .navItem {
         text-align: center;
         float: none
     }
@@ -173,7 +193,7 @@ a {
         width: 100%;
         height: auto;
         flex-direction: column;
-        background: #252525;
+        background: var(--color-fondo);
     }
 
     .todo {

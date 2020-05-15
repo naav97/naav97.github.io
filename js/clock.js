@@ -21,6 +21,12 @@ function main( )
     alll.style.backgroundImage = url;
     startTime();
     getWeather();
+    let inputt = document.getElementById("cont");
+    inputt.addEventListener('keydown', (e) => {
+        if(e.key === "Enter"){
+            getCorona();
+        }
+    });
 }
 
 
@@ -38,6 +44,7 @@ function getWeather(){
 }
 
 function getCorona(){
+    document.getElementById("loader").style.display = "block";
     var poblas = JSON.parse(paises);
     var t = new Date();
     var ano = t.getFullYear();
@@ -90,6 +97,8 @@ function getCorona(){
         document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados ' + poractpr + '% de la poblacion)';
         document.getElementById('recuperados').innerHTML = 'Recuperados: ' + recuperados + " (" + porrecr + '%)';
         document.getElementById('muertos').innerHTML = 'Muertes: ' + muertos + " (" + pormur + '%)';
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("respuestaC").style.display = "block";
     }
     dato.send();
 }
