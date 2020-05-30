@@ -64,6 +64,7 @@ function getCorona(){
     dato.onload = function() {
         //let poblacion = document.getElementById("pop").value;
         let poblacion = 0;
+        var p;
         for (p in poblas) {
             var soni = poblas[p].Name.toUpperCase() === pais.toUpperCase();
             if (soni) {
