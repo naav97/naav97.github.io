@@ -47,9 +47,10 @@ function getCorona(){
     document.getElementById("loader").style.display = "block";
     var poblas = JSON.parse(paises);
     var t = new Date();
+    t.setDate(t.getDate() - 1);
     var ano = t.getFullYear();
     var mes = t.getMonth() + 1;
-    var dia = t.getDate() - 1;
+    var dia = t.getDate();
     if ((mes+"").length < 2) {
         mes = '0' + mes;
     }
@@ -58,6 +59,9 @@ function getCorona(){
     }
     var fe = ano + "-" + mes + "-" + dia;
     var pais = document.getElementById("cont").value;
+    if (pais === "uk") {
+        pais = "united kingdom";
+    }
     var dato = new XMLHttpRequest();
     dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&region_name="+pais);
     dato.responseType = 'json';
