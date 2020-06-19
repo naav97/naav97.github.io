@@ -45,6 +45,7 @@ function getWeather(){
 
 function getCorona(){
     document.getElementById("loader").style.display = "block";
+    document.getElementById("respuestaC").style.display = "none";
     var poblas = JSON.parse(paises);
     var t = new Date();
     t.setDate(t.getDate() - 1);
@@ -66,7 +67,6 @@ function getCorona(){
     dato.open("GET", "https://covid-api.com/api/reports?date="+fe+"&region_name="+pais);
     dato.responseType = 'json';
     dato.onload = function() {
-        //let poblacion = document.getElementById("pop").value;
         let poblacion = 0;
         var p;
         for (p in poblas) {
@@ -93,11 +93,11 @@ function getCorona(){
         let porrec = (recuperados * 100)/(confirmados - activos);
         let pormu = (muertos * 100)/(confirmados - activos);
         let poractp = (activos * 100)/poblacion;
-        let porconfr = Math.round(porconf * 100000) / 100000;
-        let poractr = Math.round(poract * 100000) / 100000;
-        let porrecr = Math.round(porrec * 100000) / 100000;
-        let pormur = Math.round(pormu * 100000) / 100000;
-        let poractpr = Math.round(poractp * 100000) / 100000;
+        let porconfr = Math.round(porconf * 10000) / 10000;
+        let poractr = Math.round(poract * 10000) / 10000;
+        let porrecr = Math.round(porrec * 10000) / 10000;
+        let pormur = Math.round(pormu * 10000) / 10000;
+        let poractpr = Math.round(poractp * 10000) / 10000;
         document.getElementById('confirmados').innerHTML = 'Confirmados: ' + confirmados + " (" + porconfr + '% de la poblacion)';
         document.getElementById('activos').innerHTML = 'Activos: ' + activos + " (" + poractr + '% de los confirmados ' + poractpr + '% de la poblacion)';
         document.getElementById('recuperados').innerHTML = 'Recuperados: ' + recuperados + " (" + porrecr + '%)';
