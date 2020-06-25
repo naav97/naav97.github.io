@@ -10,7 +10,7 @@ function startTime()
     var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     var diasencuarentena = Math.round(Math.abs((dayzero - today)/ oneday));
    document.getElementById('dia').innerHTML=d_names[curr_day];
-   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d+" | "+diasencuarentena+" dias en cuarentena";
+   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d+" | "+diasencuarentena+" DEC";
    setTimeout(startTime, 10000000);
 }
 function main( )
