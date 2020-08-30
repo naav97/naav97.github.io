@@ -1,16 +1,14 @@
 function startTime()
 {
-    var oneday = 24*60*60*1000;
-    var dayzero = new Date(2020,2,20);
+    var oneday = 24*60*60*100; 
    var today = new Date();
    var d = today.getDate();
    var mo = today.getMonth() + 1;
    var curr_day  = today.getDay();
    var d_names = ["Sunday","Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
-    var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    var diasencuarentena = Math.round(Math.abs((dayzero - today)/ oneday));
+    var mo_names = ["January","February","March","April","May","June","July","August","September","October","November","December"]; 
    document.getElementById('dia').innerHTML=d_names[curr_day];
-   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d+" | "+diasencuarentena+" DEC";
+   document.getElementById('horaFecha').innerHTML = mo_names[mo-1]+" "+d;
    setTimeout(startTime, 10000000);
 }
 function main( )
