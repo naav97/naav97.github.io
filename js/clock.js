@@ -152,7 +152,3 @@ function fileT(){
 function top1(){
     document.getElementById("top1").scrollIntoView({behavior: "smooth", block: "center"});
 }
-
-function corona(){
-  document.getElementById("corona").scrollIntoView({behavior: "smooth", block: "center"});
-}
