@@ -137,10 +137,6 @@ function chans(){
     document.getElementById("chans").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
-function laU(){
-    document.getElementById("laU").scrollIntoView({behavior: "smooth", block: "center"});
-}
-
 function movies(){
     document.getElementById("movies").scrollIntoView({behavior: "smooth", block: "center"});
 }
