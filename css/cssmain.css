@@ -48,19 +48,19 @@ ul li .navItem{
 
 #wether {
     float: right;
-    color: #fff;
+    color: #C1C1C1;
 }
 
 #dia {
 	  font-size: 110px;
     font-weight: 100;
-    color: #b2b2b2;
+    color: #C1C1C1;
 }
 
 #horaFecha {
 	  font-size: 55px;
-    font-weight: 300;
-	  color: #b2b2b2;
+	  font-weight: 300;
+	  color: #C1C1C1;
 	  margin-bottom: 30px;
 }
 
@@ -99,7 +99,7 @@ a:hover {
 
 a {
     text-decoration: none;
-    color: #b2b2b2;
+    color: #C1C1C1;
     text-align: center;
 }
 
@@ -114,8 +114,8 @@ a {
 	padding: 1em;
 	margin: 0.8em;
 	border: none;
-	border-bottom: 1px solid #b2b2b2;
-	color: #b2b2b2;
+	border-bottom: 1px solid #C1C1C1;
+	color: #C1C1C1;
 	letter-spacing: 1px;
 }
 
