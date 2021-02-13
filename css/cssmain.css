@@ -6,7 +6,8 @@ html{
 	background-position:50% 0%;
   background-attachment: fixed;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Courier New', monospace; */
+	font-family: Arial, sans-serif;
 }
 body {
 	margin: 0;

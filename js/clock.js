@@ -34,12 +34,6 @@ function main( )
     alll.style.backgroundImage = url;
     startTime();
     getWeather();
-    let inputt = document.getElementById("cont");
-    inputt.addEventListener('keydown', (e) => {
-        if(e.key === "Enter"){
-            getCorona();
-        }
-    });
 }
 
 
