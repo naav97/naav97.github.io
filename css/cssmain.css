@@ -120,6 +120,10 @@ a {
 	letter-spacing: 1px;
 }
 
+#movie {
+	width: 40%;
+}
+
 .margin1 {
 	  margin-top: 10%;
     margin-bottom: 10%;

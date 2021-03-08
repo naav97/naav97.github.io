@@ -96,11 +96,14 @@
       <div class="todo" id="movies">
           <div class="margin1">
               <div class="container" id="links">
-                  <a class="link" href="https://www.imdb.com/">IMDB</a><br>
-                  <br>
-                  <a class="link" href="https://www.metacritic.com/">Metacritic</a><br>
-                  <br>
-                  <a class="link" href="https://www.themoviedb.org/">The Movie Data Base</a><br>
+         	<input class="search" name="movie" id="movie" placeholder="peli" type="text" />
+		<a class="link" onclick="getMovie()">Go</a><br>
+		<div style="display: block; width: 100%;">
+			<p id="nombrePeli"></p><br>
+			<p id="IBDb"></p><br>
+			<p id="MetaC"></p><br>
+		</div>
+                <a class="link" href="https://www.themoviedb.org/">The Movie Data Base</a><br>
               </div>
           </div>
       </div>
