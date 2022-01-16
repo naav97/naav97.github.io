@@ -50,25 +50,6 @@ function getWeather(){
     xhr.send();
 }
 
-function getMovie(){
-	var datos = new XMLHttpRequest();
-	var peli =  document.getElementById("movie").value;
-	datos.open("GET", "http://www.omdbapi.com/?t="+peli+"&apikey=d08cbe34");
-	datos.responseType = 'json';
-	datos.onload = function() {
-		console.log(datos);
-		let title = datos.response.Title;
-		let year = datos.response.Year;
-		let FT = title+" ("+year+")";
-		let imdbR = datos.response.imdbRating;
-		let MetaR = datos.response.Metascore;
-		document.getElementById('nombrePeli').innerHTML = FT;
-		document.getElementById('IBDb').innerHTML = "IMDb: "+imdbR;
-		document.getElementById('MetaC').innerHTML = "Metascore: "+MetaR;
-	}
-	datos.send();
-}
-
 function getCorona(){
     document.getElementById("loader").style.display = "block";
     document.getElementById("respuestaC").style.display = "none";
@@ -148,10 +129,6 @@ function software(){
 
 function chans(){
     document.getElementById("chans").scrollIntoView({behavior: "smooth", block: "center"});
-}
-
-function movies(){
-    document.getElementById("movies").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function fileT(){
