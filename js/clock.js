@@ -34,21 +34,6 @@ function main( )
     var alll = document.getElementsByTagName("HTML")[0];
     alll.style.backgroundImage = url;
     startTime();
-    getWeather();
-}
-
-
-function getWeather(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://dataservice.accuweather.com/currentconditions/v1/107487?apikey=7CFdFSVuYt8e8Ry2daeRIjBifNHiGGBw");
-    xhr.responseType = 'json';
-
-    xhr.onload = function() {
-        let temp = xhr.response["0"].Temperature.Metric.Value;
-        document.getElementById('wether').innerHTML = temp + 'C';
-    }
-
-    xhr.send();
 }
 
 function getCorona(){
@@ -138,5 +123,9 @@ function fileT(){
 
 function top1(){
     document.getElementById("top1").scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+function music(){
+    document.getElementById("music").scrollIntoView({behavior: "smooth", block: "center"});
 }
 // @license-end
