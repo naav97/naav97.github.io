@@ -2,15 +2,9 @@ html{
     --color-fondo: #333333;
     background-color: #252525;
     background-size: cover;
-	background-repeat:no-repeat;
 	background-position:50% 0%;
     background-attachment: fixed;
 	text-align: center;
-	/* font-family: 'Courier New', monospace; */
-	font-family: Arial, sans-serif;
-}
-body {
-	margin: 0;
 }
 
 .todo {
@@ -18,11 +12,12 @@ body {
 	  border-style: solid;
 	  border-width: 8px;
     border-color: var(--color-fondo);
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 6%;
-    margin-bottom: 20%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#top1 {
+    margin-top: 150px;
 }
 
 ul {
@@ -39,8 +34,10 @@ ul {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 li {
 	text-align: center;
+    margin: 0;
 }
 
 ul li .navItem{
@@ -68,15 +65,12 @@ ul li .navItem{
 .link {
 	  font-size: 25px;
     font-weight: 400;
-    width: 45%;
     margin-top: 2%;
-    margin-right: 5%;
 }
 
-.container {
+.container-old {
 	  display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-evenly;*/
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -96,6 +90,7 @@ p {
 
 a:hover {
 	background-color: #161616;
+    color: #C1C1C1;
 }
 
 a {
@@ -109,15 +104,18 @@ a {
 	padding: 8px 16px;
 }
 
-.search{
+input[type="text"] {
 	width: 70%;
 	background: none;
-	padding: 1em;
-	margin: 0.8em;
 	border: none;
 	border-bottom: 1px solid #C1C1C1;
+    border-radius: 0;
 	color: #C1C1C1;
 	letter-spacing: 1px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #C1C1C1;
 }
 
 #movie {
@@ -125,8 +123,7 @@ a {
 }
 
 .margin1 {
-	  margin-top: 10%;
-    margin-bottom: 10%;
+    margin: 10%;
 }
 
 #cont {
@@ -155,9 +152,8 @@ a {
     100% { transform: rotate(360deg); }
 }
 
-@media screen and (min-width: 591px) and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
     ul {
-        width: 100%;
         height: auto;
         /*position: relative;*/
         flex-direction: row;
@@ -167,10 +163,6 @@ a {
     ul li .navItem{
         float: left;
         padding: 15px;
-    }
-
-    .todo {
-      margin-top: 13%;
     }
 
   .navItem {
@@ -186,7 +178,7 @@ a {
   }
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 570px){
     ul li .navItem {
         text-align: center;
         float: none
@@ -194,15 +186,9 @@ a {
 
     ul{
         position: static;
-        width: 100%;
         height: auto;
         flex-direction: column;
         background: var(--color-fondo);
-    }
-
-    .todo {
-        margin-top: 70%;
-        width: 50%;
     }
 
     #dia {
@@ -216,11 +202,14 @@ a {
 
     #link {
       margin-top: 4%;
-      font-size: 20px;
       width: 100%;
     }
 
     .container {
         flex-direction: column;
+    }
+
+    .link {
+        font-size: 20px;
     }
 }

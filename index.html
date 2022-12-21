@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>New Tab</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet"/>
+    <link href="./css/skeleton.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="./css/cssmain.css">
     <script type="text/javascript" src="./js/clock.js"></script>
     </head>
@@ -23,7 +27,7 @@
           <li><a class="navItem" onclick="music()">Music</a></li>
         </ul>
       </div>
-      <div class="todo" id="top1">
+      <div class="container todo" id="top1">
        <div class="margin1">
         <div id="dia"></div>
         <div id="horaFecha"></div>
@@ -44,83 +48,92 @@
         </form>
        </div>
       </div>
-      <div class="todo" id="lenguas">
+      <div class="container todo" id="lenguas">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://lingva.ml/">GoogleTranslate</a><br>
-                  <br>
-                  <a class="link" href="https://www.linguee.com/">Linguee</a><br>
-                  <br>
-		  <a class="link" href="https://languagetool.org/">LanguageTool</a><br>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://lingva.ml/">GoogleTranslate</a>
+                      <a class="six columns link" href="https://www.linguee.com/">Linguee</a>
+                  </div>
+                  <div class="row">
+		              <a class="six columns link" href="https://languagetool.org/">LanguageTool</a>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="todo" id="torrents">
+      <div class="container todo" id="torrents">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://thepiratebay.org/">The Prirate Bay</a><br>
-		  <br>
-                  <a class="link" href="https://www.1337x.to/">1337X</a><br>
-                  <br>
-                  <a class="link" href="https://torrentfreak.com/top-torrent-sites-2021-210103/">Top torrent sites</a><br>
-                  <br>
-                  <a class="link" href="https://www.libgen.is/">Library Genesis</a>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://thepiratebay.org/">The Prirate Bay</a>
+                      <a class="six columns link" href="https://www.1337x.to/">1337X</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://torrentfreak.com/top-torrent-sites-2021-210103/">Top torrent sites</a>
+                      <a class="six columns link" href="https://www.libgen.is/">Library Genesis</a>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="todo" id="software">
+      <div class="container todo" id="software">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://alternativeto.net/">AlternativeTo</a><br>
-                  <br>
-                  <a class="link" href="https://github.com/naav97/guides/blob/master/ALTERNATIVES.md">Minimal Alternatives</a><br>
-                  <br>
-                  <a class="link" href="https://www.privacytools.io/">Privacy tools</a><br>
-                  <br>
-                  <a class="link" href="https://github.com/sindresorhus/awesome">Awesome Lists</a><br>
-                  <br>
-                  <a class="link" href="https://github.com/luong-komorebi/Awesome-Linux-Software">Awesome Linux Software</a><br>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://alternativeto.net/">AlternativeTo</a>
+                      <a class="six columns link" href="https://github.com/naav97/guides/blob/master/ALTERNATIVES.md">Minimal Alternatives</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://www.privacytools.io/">Privacy tools</a>
+                      <a class="six columns link" href="https://github.com/sindresorhus/awesome">Awesome Lists</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://github.com/luong-komorebi/Awesome-Linux-Software">Awesome Linux Software</a>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="todo" id="chans">
+      <div class="container todo" id="chans">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://boards.4channel.org/g/">/g/</a><br>
-                  <br>
-                  <a class="link" href="https://boards.4channel.org/wsg/">/wsg/</a><br>
-                  <br>
-                  <a class="link" href="https://boards.4channel.org/tv/">/tv/</a><br>
-                  <br>
-                  <a class="link" href="https://tvch.moe/tv/index.html">tvch/tv/</a><br>
-                  <br>
-                  <a class="link" href="https://boards.4channel.org/biz/">/biz/</a><br>
-                  <br>
-                  <a class="link" href="https://boards.4channel.org/mu/">/mu/</a><br>
-                  <br>
-                  <a class="link" href="https://8chan.moe/hispachan/">/his/</a><br>
-                  <br>
-                  <a class="link" href="https://boards.4chan.org/pol/">/pol/</a><br>
-                  <br>
-                  <a class="link" href="https://kohlchan.net/c/">/c/</a><br>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://boards.4channel.org/g/">/g/</a>
+                      <a class="six columns link" href="https://boards.4channel.org/wsg/">/wsg/</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://boards.4channel.org/tv/">/tv/</a>
+                      <a class="six columns link" href="https://tvch.moe/tv/index.html">tvch/tv/</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://boards.4channel.org/biz/">/biz/</a>
+                      <a class="six columns link" href="https://boards.4channel.org/mu/">/mu/</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://8chan.moe/hispachan/">/his/</a>
+                      <a class="six columns link" href="https://boards.4chan.org/pol/">/pol/</a>
+                  </div>
+                  <div class="row">
+                      <a class="six columns link" href="https://kohlchan.net/c/">/c/</a>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="todo" id="fileT">
+      <div class="container todo" id="fileT">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://file.pizza/">File Pizza(BitTorrent)</a><br>
-                  <br>
-                  <a class="link" href="https://toffeeshare.com/">ToffeeShare(RTP)</a><br>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://file.pizza/">File Pizza(BitTorrent)</a>
+                      <a class="six columns link" href="https://toffeeshare.com/">ToffeeShare(RTP)</a>
+                  </div>
               </div>
           </div>
       </div>
-      <div class="todo" id="music">
+      <div class="container todo" id="music">
           <div class="margin1">
-              <div class="container" id="links">
-                  <a class="link" href="https://musicbrainz.org/">MusicBrainz</a><br>
-                  <br>
-                  <a class="link" href="https://www.whosampled.com/">Who Sampled</a><br>
+              <div id="links">
+                  <div class="row">
+                      <a class="six columns link" href="https://musicbrainz.org/">MusicBrainz</a>
+                      <a class="six columns link" href="https://www.whosampled.com/">Who Sampled</a>
+                  </div>
               </div>
           </div>
       </div>
