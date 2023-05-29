@@ -1,0 +1,44 @@
+.landing {
+    height: 99vh;
+}
+
+.landing .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing img {
+    width: 40%;
+    border-radius: 50%;
+    border: 4px solid black;
+    margin-bottom: 25px;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+
+.img-g {
+    max-width: 99%
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    width: 40%;
+    margin: 5%;
+}
+
+dialog {
+    max-width: 45%;
+}
+
+dialog img {
+    max-width: 100%;
+}
