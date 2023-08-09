@@ -36,6 +36,11 @@
   box-sizing: border-box; 
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1399px) {
     .container {
         max-width: 1140px;
