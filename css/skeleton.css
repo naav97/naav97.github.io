@@ -39,6 +39,13 @@
 .row {
   display: flex;
   align-items: center;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 @media (max-width: 1399px) {
@@ -68,10 +75,6 @@
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
-    }
-
-    .row {
-        flex-wrap: wrap;
     }
 }
 
