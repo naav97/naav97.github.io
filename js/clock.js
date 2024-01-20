@@ -54,5 +54,5 @@ document.addEventListener('keydown', (e) => {
     if(e.key === 'y') {
         window.location.href = 'https://www.youtube.com/';
     }
-}
+});
 // @license-end
