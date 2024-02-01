@@ -20,6 +20,11 @@ const main = () => {
     const url = 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')';
     document.getElementsByTagName("HTML")[0].style.backgroundImage = url;
     //startTime();
+    document.getElementById('sc-input').addEventListener('keydown', (e) => {
+        if(e.key === 'y') {
+            window.location.href = 'https://www.youtube.com/';
+        }
+    });
 }
 
 function lenguas(){
@@ -50,9 +55,4 @@ function music(){
     document.getElementById("music").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
-document.addEventListener('keydown', (e) => {
-    if(e.key === 'y') {
-        window.location.href = 'https://www.youtube.com/';
-    }
-});
 // @license-end
