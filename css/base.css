@@ -1,10 +1,6 @@
 /*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
+* Base
+* Based on Skeleton css
 */
 
 
@@ -220,7 +216,8 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -233,7 +230,31 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0; 
+}
+
+.button[disabled],
+button[disabled],
+input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  cursor: default;
+  opacity: .5;
+}
+
+.button[disabled]:focus, .button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:hover,
+input[type='button'][disabled]:focus,
+input[type='button'][disabled]:hover,
+input[type='reset'][disabled]:focus,
+input[type='reset'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+input[type='submit'][disabled]:hover {
+  background-color: #9b4dca;
+  border-color: #9b4dca;
+}
+
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -259,6 +280,10 @@ input[type="button"].button-primary:focus {
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -291,6 +316,10 @@ textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
+input[type='color']:focus,
+input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -325,16 +354,21 @@ ul {
   list-style: circle inside; }
 ol {
   list-style: decimal inside; }
-ol, ul {
+ol, ul, dl {
   padding-left: 0;
   margin-top: 0; }
 ul ul,
 ul ol,
+ul dl,
 ol ol,
-ol ul {
+ol ul,
+ol dl, 
+dl ul,
+dl ol,
+dl dl {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
-li {
+li, dd, dt {
   margin-bottom: 1rem; }
 
 
@@ -366,7 +400,14 @@ td:first-child {
   padding-left: 0; }
 th:last-child,
 td:last-child {
-  padding-right: 0; }
+  padding-right: 0; 
+}
+
+table {
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
 
 
 /* Spacing
@@ -388,7 +429,19 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem; 
+}
+
+blockquote {
+  border-left: 0.3rem solid #d1d1d1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
 
 
 /* Utilities
