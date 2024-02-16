@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="./Fork-Awesome-1.2.0/css/fork-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="../css/sanitize.css">
         <link rel="stylesheet" type="text/css" media="screen" href="../css/typography.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="../css/skeleton.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/base.css">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css">
         <script src='main.js'></script>
     </head>
@@ -17,20 +17,20 @@
             <div class="container">
                 <img src="pro-pro.jpeg" alt="Foto de perfil de Nicolas Alvarado" />
                 <h1>Nicolas Alvarado</h1>
-                <h2>Ingeniero de sistemas</h2>
+                <h2>Computer and systems engineer</h2>
             </div>
         </section>
         <section>
             <div class="container">
-                <h3>Contacto:</h3>
-                <div class="row">
-                    <div class="six columns">
-                        <span>mail: <a href="mailto:naav972@gmail.com">naav972@gmail.com</a></span>
-                    </div>
-                    <div class="six columns">
+                <h3>Contact:</h3>
+                <div class="row contact-row">
+                    <div class="one columns">
                         <a href="https://www.linkedin.com/in/nicolas-alvarado-ba38b2140/">
                             <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                         </a>
+                    </div>
+                    <div class="eleven columns">
+                        <span>mail: <a href="mailto:naav972@gmail.com">naav972@gmail.com</a></span>
                     </div>
                 </div>
             </div>
@@ -39,40 +39,39 @@
             <div class="container">
                 <div class="grid">
                     <div class="grid-item">
-                        <a onclick="openDialog('d1')">
-                        <img class="img-g" src="pro-x.png" alt="Foto de proyecto" />
-                        <h3>Proyecto X</h3>
-                        <p>Tema</p>
+                        <a onclick="openDialog('d1')" class="gi-cont">
+                        <img class="img-g" src="ehtml-front.png" alt="Foto de proyecto" />
+                        <h3>EHTML</h3>
+                        <p>HTML analyzer written in Rust</p>
                         <ul>
-                            <li>Java</li>
-                            <li>React</li>
-                            <li>DJango</li>
+                            <li>Rust</li>
                         </ul>
                         </a>
                         <dialog id="d1">
-                            <a onclick="closeDialog('d1')">X</a>
-                            <h3>Proyecto X</h3>
-                            <p>Descripcion</p>
-                            <img src="pro-x.png" alt="Foto del proyecto" />
-                            <img src="pro-x.png" alt="Foto del proyecto" />
+                            <a onclick="closeDialog('d1')" class="close-x">X</a>
+                            <div class="dialog-cont">
+                                <h3>EHTML</h3>
+                                <p>EHTML is a program written in Rust that verifies the structure of an HTML file and gives tips to improve SEO.</p>
+                                <p>GitHub: <a href="https://github.com/naav97/EHTML">EHTML</a></p>
+                            </div>
                         </dialog>
                     </div>
                     <div class="grid-item">
-                        <a onclick="openDialog('d2')">
-                        <img class="img-g" src="pro-x.png" alt="Foto de proyecto" />
-                        <h3>Proyecto X</h3>
-                        <p>Tema</p>
+                        <a onclick="openDialog('d2')" class="gi-cont">
+                        <img class="img-g" src="exco-front.png" alt="Foto de proyecto" />
+                        <h3>exco</h3>
+                        <p>Utility to extract files in the terminal independent of file type.</p>
                         <ul>
-                            <li>Java</li>
-                            <li>React</li>
-                            <li>DJango</li>
+                            <li>Bash</li>
                         </ul>
                         </a>
                         <dialog id="d2">
-                            <a onclick="closeDialog('d2')">X</a>
-                            <h3>Proyecto X</h3>
-                            <p>Descripcion</p>
-                            <img src="pro-x.png" alt="Foto del proyecto" />
+                            <a onclick="closeDialog('d2')" class="close-x">X</a>
+                            <div class="dialog-cont">
+                                <h3>exco</h3>
+                                <p>exco is a bash script that handles the logic of choosing the right program to extract a compressed archive based on the file extension. exco was inspired by <a href="https://wummel.github.io/patool/">patool</a>.</p>
+                                <p>GitHub: <a href="https://github.com/naav97/exco">exco</a></p>
+                            </div>
                         </dialog>
                     </div>
                 </div>
@@ -80,15 +79,15 @@
         </section>
         <section>
             <div class="container">
-                <h3>Contacto:</h3>
-                <div class="row">
-                    <div class="six columns">
-                        <span>mail: <a href="mailto:naav972@gmail.com">naav972@gmail.com</a></span>
-                    </div>
-                    <div class="six columns">
+                <h3>Contact:</h3>
+                <div class="row contact-row">
+                    <div class="one columns">
                         <a href="https://www.linkedin.com/in/nicolas-alvarado-ba38b2140/">
                             <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                         </a>
+                    </div>
+                    <div class="eleven columns">
+                        <span>mail: <a href="mailto:naav972@gmail.com">naav972@gmail.com</a></span>
                     </div>
                 </div>
             </div>
