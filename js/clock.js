@@ -51,8 +51,4 @@ function top1(){
     document.getElementById("top1").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
-function music(){
-    document.getElementById("music").scrollIntoView({behavior: "smooth", block: "center"});
-}
-
 // @license-end
