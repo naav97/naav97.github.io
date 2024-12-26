@@ -1,27 +1,14 @@
-/* Document
- * ========================================================================== */
-
-/**
- * 1. Add border box sizing in all browsers (opinionated).
- * 2. Backgrounds do not repeat by default (opinionated).
- */
-
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  background-repeat: no-repeat; /* 2 */
+  box-sizing: border-box;
+  background-repeat: no-repeat;
 }
-
-/**
- * 1. Add text decoration inheritance in all browsers (opinionated).
- * 2. Add vertical alignment inheritance in all browsers (opinionated).
- */
 
 ::before,
 ::after {
-  text-decoration: inherit; /* 1 */
-  vertical-align: inherit; /* 2 */
+  text-decoration: inherit;
+  vertical-align: inherit;
 }
 
 /**
@@ -250,40 +237,23 @@
   outline-offset: -2px; /* 2 */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Safari.
- */
-
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
 
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
 
-/**
- * Remove the inner padding in Chrome, Edge, and Safari on macOS.
- */
-
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/**
- * 1. Correct the inability to style upload buttons in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
 
 /* Interactive
