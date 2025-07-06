@@ -1,174 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>New Tab</title>
-    <link href="./css/sanitize.css" rel="stylesheet" type="text/css"/>
-    <link href="./css/typography.css" rel="stylesheet"/>
-    <link href="./css/sanitize-forms.css" rel="stylesheet" type="text/css"/>
-    <link href="./css/base.css" rel="stylesheet" type="text/css"/>
-    <link href="./css/cssmain.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="./js/clock.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <title>New Tab</title>
+        <link href="./css/sanitize.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/typography.css" rel="stylesheet"/>
+        <link href="./css/sanitize-forms.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/base.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/cssmain.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="./js/clock.js"></script>
     </head>
     <body onload="main()">
-      <div>
-        <ul>
-          <li><a class="navItem" onclick="top1()">Home</a></li>
-          <li><a class="navItem" onclick="lenguas()">Lenguas</a></li>
-          <li><a class="navItem" onclick="torrents()">Torrents</a></li>
-          <li><a class="navItem" onclick="software()">Software</a></li>
-          <li><a class="navItem" onclick="chans()">Chans</a></li>
-          <li><a class="navItem" onclick="fileT()">File Transfer</a></li> 
-        </ul>
-      </div>
-      <div class="container todo" id="top1">
-       <div class="margin1">
-        <!-- <div id="dia"></div>
-        <div id="horaFecha"></div> -->
-        <form>
-            <input id="sc-input" type="text" class="search" placeholder="Shortcut input">
-        </form>
-        <form method="get" action="https://www.youtube.com/results" >
-            <input class="search" name="search_query" placeholder="youtube" type="text" />
-        </form>
-        <form method="get" action="https://alternativeto.net/browse/search">
-            <input class="search" name="q" placeholder="search alternatives to software" type="text"/>
-        </form>
-        <form method="post" action="https://yts.mx/search-movies">
-            <input class="search" name="keyword" placeholder="search torrents" type="text"/>
-        </form>
-        <form method="get" action="https://en.wikipedia.org/w/index.php">
-            <input class="search" name="search" placeholder="Search Wikipedia" type="text"/>
-        </form>
-        <form method="get" action="https://infogalactic.com/w/index.php">
-            <input class="search" name="search" placeholder="Search Infogalactic" type="text"/>
-        </form>
-       </div>
-      </div>
-      <div class="container todo" id="lenguas">
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://translate.google.com/">GoogleTranslate</a>
-                      <a class="six columns link" href="https://www.linguee.com/">Linguee</a>
-                  </div>
-                  <div class="row">
-		              <a class="six columns link" href="https://languagetool.org/">LanguageTool</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo" id="torrents">
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://thepiratebay.org/">The Prirate Bay</a>
-                      <a class="six columns link" href="https://www.1337x.to/">1337X</a>
-                  </div>
-                  <div class="row">
-                      <a class="six columns link" href="https://torrentfreak.com/top-torrent-sites-2021-210103/">Top torrent sites</a>
-                      <a class="six columns link" href="https://www.libgen.is/">Library Genesis</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo" id="software">
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://alternativeto.net/">AlternativeTo</a>
-                      <a class="six columns link" href="https://www.privacytools.io/">Privacy tools</a>
-                  </div>
-                  <div class="row">
-                      <a class="six columns link" href="https://github.com/sindresorhus/awesome">Awesome Lists</a>
-                      <a class="six columns link" href="http://localhost:631">CUPS</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo" id="chans">
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://boards.4channel.org/g/">/g/</a>
-                      <a class="six columns link" href="https://boards.4channel.org/wsg/">/wsg/</a>
-                  </div>
-                  <div class="row">
-                      <a class="six columns link" href="https://boards.4channel.org/tv/">/tv/</a>
-                      <a class="six columns link" href="https://tvch.moe/tv/index.html">tvch/tv/</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo" id="fileT">
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://toffeeshare.com/">ToffeeShare(RTP)</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo" id="music">
-          <h2>Music</h2>
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://musicbrainz.org/">MusicBrainz</a>
-                      <a class="six columns link" href="https://www.whosampled.com/">Who Sampled</a>
-                  </div>
-                  <div class="row">
-                      <a class="six columns link" href="https://bandcamp.com/">bandcamp</a>
-                      <a class="six columns link" href="https://www.beatport.com/">beatport</a>
-                  </div>
-                  <div class="row">
-                      <form method="get" action="https://genius.com/search">
-                          <input class="search" name="q" placeholder="search Genius" type="text"/>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo">
-          <h2>Peliculas / Movies</h2>
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <form method="get" action="https://www.imdb.com/find">
-                          <input class="search" name="q" placeholder="search IMDB" type="text"/>
-                      </form>
-                  </div>
-                  <div class="row">
-                      <form method="get" action="https://www.justwatch.com/co/buscar">
-                          <input type="text" class="search" name="q" placeholder="search JustWatch">
-                      </form>
-                  </div>
-                  <div class="row">
-                      <form method="post" action="https://zeitgeistreviews.com/search">
-                          <input type="text" class="search" name="s" placeholder="search Zeitgeist Reviews">
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container todo">
-          <h2>Linux</h2>
-          <div class="margin1">
-              <div id="links">
-                  <div class="row">
-                      <a class="six columns link" href="https://repology.org/">Repology</a>
-                      <a class="six columns link" href="https://wiki.gentoo.org/wiki/OpenRC_to_systemd_Cheatsheet">OpenRC Cheatsheet</a>
-                  </div>
-                  <div class="row">
-                      <a class="six columns link" href="https://www.makeuseof.com/install-deb-packages-arch-linux/">Install .deb on Arch</a>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="todo">
+            <form method="get" action="https://www.youtube.com/results" >
+                <input class="search" name="search_query" placeholder="YouTube" type="text" />
+            </form>
+            <form method="get" action="https://alternativeto.net/browse/search">
+                <input class="search" name="q" placeholder="AlternativeTo" type="text"/>
+            </form>
+            <form action="https://thepiratebay.org/search.php" name="q">
+                <input class="search" name="q" placeholder="ThePirateBay" type="text" />
+            </form>
+            <form method="post" action="https://yts.mx/search-movies">
+                <input class="search" name="keyword" placeholder="YTS" type="text"/>
+            </form>
+            <form method="get" action="https://genius.com/search">
+                <input class="search" name="q" placeholder="Genius" type="text"/>
+            </form>
+            <form method="get" action="https://www.imdb.com/find">
+                <input class="search" name="q" placeholder="IMDB" type="text"/>
+            </form>
+            <form method="get" action="https://www.justwatch.com/co/buscar">
+                <input type="text" class="search" name="q" placeholder="JustWatch">
+            </form>
+            <a class="link" href="https://translate.google.com/">GoogleTranslate</a>
+            <a class="link" href="https://www.linguee.com/">Linguee</a>
+            <a class="link" href="https://languagetool.org/">LanguageTool</a>
+            <a class="link" href="https://torrentfreak.com/top-torrent-sites-2021-210103/">Top torrent sites</a>
+            <a class="link" href="https://www.libgen.is/">Library Genesis</a>
+            <a class="link" href="https://www.privacytools.io/">Privacy tools</a>
+            <a class="link" href="https://github.com/sindresorhus/awesome">Awesome Lists</a>
+            <a class="link" href="http://localhost:631">CUPS</a>
+            <a class="link" href="https://toffeeshare.com/">ToffeeShare(RTP)</a>
+            <a class="link" href="https://musicbrainz.org/">MusicBrainz</a>
+            <a class="link" href="https://www.whosampled.com/">Who Sampled</a>
+            <a class="link" href="https://bandcamp.com/">bandcamp</a>
+            <a class="link" href="https://www.beatport.com/">beatport</a>
+            <a class="link" href="https://repology.org/">Repology</a>
+            <a class="link" href="https://wiki.gentoo.org/wiki/OpenRC_to_systemd_Cheatsheet">OpenRC Cheatsheet</a>
+            <a class="link" href="https://www.makeuseof.com/install-deb-packages-arch-linux/">Install .deb on Arch</a>
+        </div>
     </body>
 </html>

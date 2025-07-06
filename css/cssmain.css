@@ -1,42 +1,42 @@
 html{
-    --color-fondo: #333333;
+    --color-fondo: #33333399;
     background-color: #252525;
     background-size: cover;
-	background-position:50% 0%;
+    background-position:50% 0%;
     background-attachment: fixed;
-	text-align: center;
+    text-align: center;
 }
 
 .todo {
-	  background-color: var(--color-fondo);
-	  border-style: solid;
-	  border-width: 8px;
-    border-color: var(--color-fondo);
-    margin-top: 200px;
-    margin-bottom: 200px;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-#top1 {
-    margin-top: 100px;
+.todo > * {
+    width: 300px;
 }
 
 ul {
-	position: fixed;
-	list-style-type: none;
-	top: 0;
-	margin: 1%;
-	padding: 0;
-	overflow: auto;
-	background: var(--color-fondo);
-	width: 98%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    position: fixed;
+    list-style-type: none;
+    top: 0;
+    margin: 1%;
+    padding: 0;
+    overflow: auto;
+    background: var(--color-fondo);
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 li {
-	text-align: center;
+    text-align: center;
     margin: 0;
 }
 
@@ -50,26 +50,26 @@ ul li .navItem{
 }
 
 #dia {
-	  font-size: 110px;
+    font-size: 110px;
     font-weight: 100;
     color: #C1C1C1;
 }
 
 #horaFecha {
-	  font-size: 55px;
-	  font-weight: 300;
-	  color: #C1C1C1;
-	  margin-bottom: 30px;
+    font-size: 55px;
+    font-weight: 300;
+    color: #C1C1C1;
+    margin-bottom: 30px;
 }
 
 .link {
-	  font-size: 25px;
+    font-size: 1.5em;
     font-weight: 400;
-    margin-top: 2%;
+    margin-bottom: 2.5rem;
 }
 
 .container-old {
-	  display: flex;
+    display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
@@ -88,11 +88,6 @@ p {
     margin-right: 10%;
 }
 
-a:hover {
-	background-color: #161616;
-    color: #C1C1C1;
-}
-
 a {
     text-decoration: none;
     color: #C1C1C1;
@@ -100,18 +95,16 @@ a {
 }
 
 .navItem {
-	font-size: 18px;
-	padding: 8px 16px;
+    font-size: 18px;
+    padding: 8px 16px;
 }
 
 input[type="text"] {
-	width: 70%;
-	background: none;
-	border: none;
-	border-bottom: 1px solid #C1C1C1;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #C1C1C1;
     border-radius: 0;
-	color: #C1C1C1;
-	letter-spacing: 1px;
+    color: #FFF;
 }
 
 input[type="text"]:focus {
@@ -119,7 +112,7 @@ input[type="text"]:focus {
 }
 
 #movie {
-	width: 40%;
+    width: 40%;
 }
 
 .margin1 {
@@ -165,17 +158,17 @@ input[type="text"]:focus {
         padding: 15px;
     }
 
-  .navItem {
-    font-size: 13px;
-  }
+    .navItem {
+        font-size: 13px;
+    }
 
-  #dia {
-    font-size: 70px;
-  }
+    #dia {
+        font-size: 70px;
+    }
 
-  #horaFecha {
-    font-size: 40px;
-  }
+    #horaFecha {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 570px){
@@ -201,8 +194,8 @@ input[type="text"]:focus {
     }
 
     #link {
-      margin-top: 4%;
-      width: 100%;
+        margin-top: 4%;
+        width: 100%;
     }
 
     .container {
