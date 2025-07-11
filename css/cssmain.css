@@ -136,6 +136,45 @@ input[type="text"]:focus {
     animation: spin 2s linear infinite;
 }
 
+#dbb-link {
+  border: 3px solid;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* animation: borderColorShift 10s linear infinite; */
+  position: relative;
+  z-index: 0;
+  background: black;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#dbb-link::before {
+  content: '';
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  z-index: -1;
+  background: linear-gradient(45deg, #966, #996, #696, #699, #669, #969, #966);
+  background-size: 400% 400%;
+  animation: trippyBorder 20s linear infinite;
+  border-radius: 12px;
+}
+
+@keyframes trippyBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes borderColorShift {
+  0%   { border-color: red;    color: red; }
+  25%  { border-color: lime;   color: lime; }
+  50%  { border-color: blue;   color: blue; }
+  75%  { border-color: orange; color: orange; }
+  100% { border-color: red;    color: red; }
+}
+
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
